@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1523273523 source:/home/renjie/SimpleAudio/main.cpp
+	<iostream>
+	"SimpleAudio.h"
+
+1523273526 /home/renjie/SimpleAudio/SimpleAudio.h
+	<AL/al.h>
+	<AL/alut.h>
+
