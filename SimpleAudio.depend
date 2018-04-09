@@ -3,7 +3,10 @@
 	<iostream>
 	"SimpleAudio.h"
 
-1523273730 /home/renjie/SimpleAudio/SimpleAudio.h
+1523275068 /home/renjie/SimpleAudio/SimpleAudio.h
 	<AL/al.h>
 	<AL/alut.h>
+
+1523275514 source:/home/renjie/SimpleAudio/SimpleAudio.c
+	"SimpleAudio.h"
 

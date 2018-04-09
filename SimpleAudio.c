@@ -35,17 +35,17 @@ void saDestoryBuffer(int buffer)
     alDeleteBuffers(1,&buffer);
 }
 
-void saLoadBuffer(int buffer,void *pData,unsigned int sz)
+void saLoadBuffer(ALuint buffer,void *pData,unsigned int sz)
 {
     alBufferData(buffer,AL_FORMAT_STEREO16,pData,sz,44100);
 }
 
-void saSetSourceLooping(int bLoop)
+void saSetSourceLooping(ALuint source,int bLoop)
 {
     if(bLoop)
-        alSourcei(myAudioSource,AL_LOOPING,AL_TRUE);
+        alSourcei(source,AL_LOOPING,AL_TRUE);
     else
-        alSourcei(myAudioSource,AL_LOOPING,AL_FALSE);
+        alSourcei(source,AL_LOOPING,AL_FALSE);
 }
 
 void saPlaySound(ALuint source,ALuint buffer)
